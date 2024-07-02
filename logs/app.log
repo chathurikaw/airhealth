@@ -1,0 +1,979 @@
+2024-07-02 10:32:59 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 10:33:04 [main] ERROR mobile.functions.BaseClass - Failed to install App
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-5A7KV0R', ip: '192.168.56.1'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}]}]
+Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536) ~[selenium-remote-driver-4.21.0.jar:?]
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270) ~[java-client-9.2.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161) ~[selenium-remote-driver-4.21.0.jar:?]
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91) ~[java-client-9.2.3.jar:?]
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103) ~[java-client-9.2.3.jar:?]
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109) ~[java-client-9.2.3.jar:?]
+	at mobile.functions.BaseClass.initializeDriver(BaseClass.java:29) ~[classes/:?]
+	at airhealth.tests.DashboardTest.launchApp(DashboardTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:439) ~[selenium-http-4.21.0.jar:?]
+	at io.appium.java_client.internal.filters.AppiumIdempotencyFilter.lambda$apply$0(AppiumIdempotencyFilter.java:35) ~[java-client-9.2.3.jar:?]
+	at io.appium.java_client.internal.filters.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:87) ~[java-client-9.2.3.jar:?]
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55) ~[selenium-http-4.21.0.jar:?]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355) ~[selenium-http-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61) ~[selenium-remote-driver-4.21.0.jar:?]
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176) ~[java-client-9.2.3.jar:?]
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237) ~[java-client-9.2.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	... 31 more
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1045) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183) ~[java.net.http:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-07-02 10:33:04 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 10:33:50 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 10:34:03 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 10:34:03 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 10:34:10 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 10:34:10 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 10:34:10 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 10:34:10 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8346d830-7bdf-4a74-a1ec-1fe35f7f8f3d)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:34:15 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 10:34:15 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 10:34:15 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8346d830-7bdf-4a74-a1ec-1fe35f7f8f3d)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:34:20 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 10:34:20 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 10:34:20 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8346d830-7bdf-4a74-a1ec-1fe35f7f8f3d)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:34:25 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 10:34:25 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 10:34:26 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (8346d830-7bdf-4a74-a1ec-1fe35f7f8f3d)] -> xpath: //android.widget.EditText] 
+2024-07-02 10:34:27 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 10:34:27 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 10:34:27 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 10:34:28 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8346d830-7bdf-4a74-a1ec-1fe35f7f8f3d)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:34:33 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 10:34:33 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 10:34:34 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8346d830-7bdf-4a74-a1ec-1fe35f7f8f3d)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:34:39 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:34:39 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:34:39 [main] DEBUG airhealth.pages.DashboardScreen - View forecaste details
+2024-07-02 10:43:20 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 10:43:29 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 10:43:29 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 10:43:31 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 10:43:32 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 10:43:32 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 10:43:32 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4aa0c6b9-6fdc-49c9-bdc4-a07e9f3f3302)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:43:37 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 10:43:37 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 10:43:37 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4aa0c6b9-6fdc-49c9-bdc4-a07e9f3f3302)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:43:42 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 10:43:42 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 10:43:42 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4aa0c6b9-6fdc-49c9-bdc4-a07e9f3f3302)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:43:47 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 10:43:47 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 10:43:47 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (4aa0c6b9-6fdc-49c9-bdc4-a07e9f3f3302)] -> xpath: //android.widget.EditText] 
+2024-07-02 10:43:49 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 10:43:49 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 10:43:49 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 10:43:50 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4aa0c6b9-6fdc-49c9-bdc4-a07e9f3f3302)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:43:55 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 10:43:55 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 10:43:57 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4aa0c6b9-6fdc-49c9-bdc4-a07e9f3f3302)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:44:02 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:44:02 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:44:02 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 10:47:46 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 10:47:54 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 10:47:54 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 10:47:56 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 10:47:56 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 10:47:56 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 10:47:56 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (d81efbc0-80db-40ab-a6fd-ee2896690fd9)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:48:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 10:48:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 10:48:02 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (d81efbc0-80db-40ab-a6fd-ee2896690fd9)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:48:07 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 10:48:07 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 10:48:07 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (d81efbc0-80db-40ab-a6fd-ee2896690fd9)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:48:12 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 10:48:12 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 10:48:12 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (d81efbc0-80db-40ab-a6fd-ee2896690fd9)] -> xpath: //android.widget.EditText] 
+2024-07-02 10:48:13 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 10:48:14 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 10:48:14 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 10:48:14 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (d81efbc0-80db-40ab-a6fd-ee2896690fd9)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:48:19 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 10:48:19 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 10:48:21 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (d81efbc0-80db-40ab-a6fd-ee2896690fd9)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:48:26 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:48:26 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:48:26 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 10:51:26 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 10:51:35 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 10:51:35 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 10:51:38 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 10:51:38 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 10:51:38 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 10:51:38 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (849bd69a-9407-4787-a004-3c0bd4cc398a)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:51:43 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 10:51:43 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 10:51:43 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (849bd69a-9407-4787-a004-3c0bd4cc398a)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:51:48 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 10:51:48 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 10:51:48 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (849bd69a-9407-4787-a004-3c0bd4cc398a)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:51:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 10:51:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 10:51:54 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (849bd69a-9407-4787-a004-3c0bd4cc398a)] -> xpath: //android.widget.EditText] 
+2024-07-02 10:51:56 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 10:51:56 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 10:51:56 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 10:51:57 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (849bd69a-9407-4787-a004-3c0bd4cc398a)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:52:02 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 10:52:02 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 10:52:04 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (849bd69a-9407-4787-a004-3c0bd4cc398a)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:52:09 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:52:09 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:52:09 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 10:54:20 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 10:54:28 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 10:54:28 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 10:54:30 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 10:54:30 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 10:54:30 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 10:54:30 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (0d8411cf-fc04-4ffa-8a05-930a2a210e8e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:54:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 10:54:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 10:54:35 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (0d8411cf-fc04-4ffa-8a05-930a2a210e8e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:54:40 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 10:54:40 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 10:54:40 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (0d8411cf-fc04-4ffa-8a05-930a2a210e8e)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:54:45 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 10:54:45 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 10:54:46 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (0d8411cf-fc04-4ffa-8a05-930a2a210e8e)] -> xpath: //android.widget.EditText] 
+2024-07-02 10:54:47 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 10:54:47 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 10:54:47 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 10:54:48 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (0d8411cf-fc04-4ffa-8a05-930a2a210e8e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:54:53 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 10:54:53 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 10:54:55 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (0d8411cf-fc04-4ffa-8a05-930a2a210e8e)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 10:55:00 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:55:00 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 10:55:00 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 10:59:41 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 10:59:51 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 10:59:51 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 10:59:54 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 10:59:54 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 10:59:54 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 10:59:54 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (e3973695-ee63-46c8-8c02-43873594223e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 10:59:59 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 10:59:59 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 10:59:59 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (e3973695-ee63-46c8-8c02-43873594223e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:00:04 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:00:04 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:00:04 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (e3973695-ee63-46c8-8c02-43873594223e)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:00:10 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:00:10 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:00:10 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (e3973695-ee63-46c8-8c02-43873594223e)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:00:11 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:00:11 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:00:11 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:00:11 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (e3973695-ee63-46c8-8c02-43873594223e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:00:16 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:00:16 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:00:19 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (e3973695-ee63-46c8-8c02-43873594223e)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:00:24 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:00:24 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:00:24 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:02:15 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:02:23 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:02:23 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:02:25 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:02:25 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:02:25 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:02:25 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (64e7a6a4-e38a-4173-9ab2-eff76cabe6de)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:02:30 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:02:30 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:02:30 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (64e7a6a4-e38a-4173-9ab2-eff76cabe6de)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:02:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:02:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:02:36 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (64e7a6a4-e38a-4173-9ab2-eff76cabe6de)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:02:41 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:02:41 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:02:41 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (64e7a6a4-e38a-4173-9ab2-eff76cabe6de)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:02:42 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:02:42 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:02:43 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:02:43 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (64e7a6a4-e38a-4173-9ab2-eff76cabe6de)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:02:48 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:02:48 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:02:50 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (64e7a6a4-e38a-4173-9ab2-eff76cabe6de)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:02:55 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:02:55 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:02:55 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:09:45 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:09:53 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:09:53 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:09:56 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:09:56 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:09:56 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:09:56 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (6d20d7b3-8ee1-4588-8bf4-bbc8c4285989)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:10:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:10:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:10:02 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (6d20d7b3-8ee1-4588-8bf4-bbc8c4285989)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:10:07 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:10:07 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:10:07 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (6d20d7b3-8ee1-4588-8bf4-bbc8c4285989)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:10:12 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:10:12 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:10:12 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (6d20d7b3-8ee1-4588-8bf4-bbc8c4285989)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:10:13 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:10:13 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:10:13 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:10:14 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (6d20d7b3-8ee1-4588-8bf4-bbc8c4285989)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:10:19 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:10:19 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:10:20 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (6d20d7b3-8ee1-4588-8bf4-bbc8c4285989)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:10:25 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:10:26 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:10:26 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:20:10 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:20:20 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:20:20 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:20:21 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:20:22 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:20:22 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:20:22 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (1d67b72f-c1a8-47f5-9d4f-b2bca640fe42)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:20:27 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:20:27 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:20:27 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (1d67b72f-c1a8-47f5-9d4f-b2bca640fe42)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:20:32 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:20:32 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:20:33 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (1d67b72f-c1a8-47f5-9d4f-b2bca640fe42)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:20:38 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:20:38 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:20:38 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (1d67b72f-c1a8-47f5-9d4f-b2bca640fe42)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:20:39 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:20:40 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:20:40 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:20:40 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (1d67b72f-c1a8-47f5-9d4f-b2bca640fe42)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:20:45 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:20:45 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:20:47 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (1d67b72f-c1a8-47f5-9d4f-b2bca640fe42)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:20:52 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:20:52 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:20:52 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:33:24 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:33:34 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:33:34 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:33:37 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:33:37 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:33:37 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:33:38 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (fc4a8272-6113-482f-9cc9-6a090937f3d6)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:33:43 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:33:43 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:33:43 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (fc4a8272-6113-482f-9cc9-6a090937f3d6)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:33:48 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:33:48 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:33:48 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (fc4a8272-6113-482f-9cc9-6a090937f3d6)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:33:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:33:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:33:53 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (fc4a8272-6113-482f-9cc9-6a090937f3d6)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:33:55 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:33:55 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:33:55 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:33:56 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (fc4a8272-6113-482f-9cc9-6a090937f3d6)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:34:01 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:34:01 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:34:02 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (fc4a8272-6113-482f-9cc9-6a090937f3d6)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:34:07 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:34:07 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:34:07 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:34:11 [main] DEBUG airhealth.pages.DashboardScreen - Scrolled to view forecast details
+2024-07-02 11:38:33 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:38:41 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:38:41 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:38:43 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:38:44 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:38:44 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:38:44 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3f005f4c-8911-4b0c-b303-31f65f73e4c0)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:38:49 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:38:49 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:38:49 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3f005f4c-8911-4b0c-b303-31f65f73e4c0)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:38:54 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:38:54 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:38:54 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3f005f4c-8911-4b0c-b303-31f65f73e4c0)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:38:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:38:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:38:59 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (3f005f4c-8911-4b0c-b303-31f65f73e4c0)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:39:01 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:39:01 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:39:01 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:39:02 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3f005f4c-8911-4b0c-b303-31f65f73e4c0)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:39:07 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:39:07 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:39:09 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3f005f4c-8911-4b0c-b303-31f65f73e4c0)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:39:14 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:39:14 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:39:14 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:39:18 [main] DEBUG airhealth.pages.DashboardScreen - Scrolled to view forecast details
+2024-07-02 11:40:00 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:40:09 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:40:09 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:40:11 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:40:12 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:40:12 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:40:12 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (67aa5fd7-d7cb-4ceb-92b3-dbb02414e561)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:40:17 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:40:17 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:40:17 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (67aa5fd7-d7cb-4ceb-92b3-dbb02414e561)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:40:22 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:40:22 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:40:23 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (67aa5fd7-d7cb-4ceb-92b3-dbb02414e561)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:40:28 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:40:28 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:40:28 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (67aa5fd7-d7cb-4ceb-92b3-dbb02414e561)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:40:29 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:40:30 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:40:30 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:40:30 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (67aa5fd7-d7cb-4ceb-92b3-dbb02414e561)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:40:35 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:40:35 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:40:36 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (67aa5fd7-d7cb-4ceb-92b3-dbb02414e561)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:40:41 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:40:41 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:40:41 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:42:15 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:42:24 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:42:24 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:42:26 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:42:27 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:42:27 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:42:27 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (678e5398-6e3e-4cdb-a9f4-21c572536846)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:42:32 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:42:32 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:42:32 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (678e5398-6e3e-4cdb-a9f4-21c572536846)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:42:37 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:42:37 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:42:38 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (678e5398-6e3e-4cdb-a9f4-21c572536846)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:42:43 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:42:43 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:42:43 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (678e5398-6e3e-4cdb-a9f4-21c572536846)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:42:44 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:42:45 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:42:45 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:42:45 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (678e5398-6e3e-4cdb-a9f4-21c572536846)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:42:50 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:42:50 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:42:52 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (678e5398-6e3e-4cdb-a9f4-21c572536846)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:42:57 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:42:57 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:42:57 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:43:50 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:43:58 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:43:58 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:43:59 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:44:01 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:44:01 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:44:01 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (59a657cf-d454-431a-a556-6cd8635d8ed5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:44:06 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:44:06 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:44:06 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (59a657cf-d454-431a-a556-6cd8635d8ed5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:44:11 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:44:11 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:44:12 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (59a657cf-d454-431a-a556-6cd8635d8ed5)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:44:17 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:44:17 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:44:17 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (59a657cf-d454-431a-a556-6cd8635d8ed5)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:44:18 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:44:18 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:44:18 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:44:19 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (59a657cf-d454-431a-a556-6cd8635d8ed5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:44:24 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:44:24 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:44:26 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (59a657cf-d454-431a-a556-6cd8635d8ed5)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:44:31 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:44:31 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:44:31 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:44:35 [main] DEBUG airhealth.pages.DashboardScreen - Scrolled to view forecast details
+2024-07-02 11:49:35 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:49:43 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:49:43 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:49:45 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:49:45 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:49:45 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:49:45 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (c54ad5b6-414c-4238-9640-78159b510e7c)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:49:50 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:49:50 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:49:50 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (c54ad5b6-414c-4238-9640-78159b510e7c)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:49:55 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:49:55 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:49:56 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (c54ad5b6-414c-4238-9640-78159b510e7c)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:50:01 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:50:01 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:50:01 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (c54ad5b6-414c-4238-9640-78159b510e7c)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:50:03 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:50:03 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:50:03 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:50:04 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (c54ad5b6-414c-4238-9640-78159b510e7c)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:50:09 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:50:09 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:50:11 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (c54ad5b6-414c-4238-9640-78159b510e7c)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:50:16 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:50:16 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:50:16 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:50:20 [main] DEBUG airhealth.pages.DashboardScreen - Scrolled to view forecast details
+2024-07-02 11:51:09 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:51:17 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:51:17 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:51:19 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:51:19 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:51:19 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:51:19 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aec9bbc6-32fa-4e8b-9093-f29903c81c65)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:51:24 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:51:24 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:51:24 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aec9bbc6-32fa-4e8b-9093-f29903c81c65)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:51:29 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:51:29 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:51:30 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aec9bbc6-32fa-4e8b-9093-f29903c81c65)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:51:35 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:51:35 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:51:35 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (aec9bbc6-32fa-4e8b-9093-f29903c81c65)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:51:36 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:51:36 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:51:36 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:51:37 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aec9bbc6-32fa-4e8b-9093-f29903c81c65)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:51:42 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:51:42 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:51:44 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aec9bbc6-32fa-4e8b-9093-f29903c81c65)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:51:49 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:51:49 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:51:49 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 11:57:47 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 11:57:56 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 11:57:56 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 11:57:58 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 11:57:58 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 11:57:58 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 11:57:58 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2b6313a1-b585-433e-b3dd-4b95e91943d5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:58:03 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 11:58:03 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 11:58:03 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2b6313a1-b585-433e-b3dd-4b95e91943d5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:58:08 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 11:58:08 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 11:58:09 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2b6313a1-b585-433e-b3dd-4b95e91943d5)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:58:14 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 11:58:14 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 11:58:14 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (2b6313a1-b585-433e-b3dd-4b95e91943d5)] -> xpath: //android.widget.EditText] 
+2024-07-02 11:58:15 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 11:58:16 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 11:58:16 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 11:58:16 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2b6313a1-b585-433e-b3dd-4b95e91943d5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 11:58:21 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 11:58:21 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 11:58:22 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2b6313a1-b585-433e-b3dd-4b95e91943d5)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 11:58:27 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:58:27 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 11:58:27 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:00:42 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:00:52 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:00:52 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:00:55 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:00:55 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:00:55 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:00:56 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2499de67-e1c1-4bdd-8cf6-0cda3b507cb5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:01:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:01:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:01:01 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2499de67-e1c1-4bdd-8cf6-0cda3b507cb5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:01:06 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:01:06 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:01:06 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2499de67-e1c1-4bdd-8cf6-0cda3b507cb5)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:01:11 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:01:11 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:01:11 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (2499de67-e1c1-4bdd-8cf6-0cda3b507cb5)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:01:12 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:01:12 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:01:12 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:01:13 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2499de67-e1c1-4bdd-8cf6-0cda3b507cb5)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:01:18 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:01:18 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:01:19 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (2499de67-e1c1-4bdd-8cf6-0cda3b507cb5)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:01:24 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:01:24 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:01:24 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:05:22 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:05:33 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:05:33 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:05:35 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:05:35 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:05:35 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:05:35 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (eb40e851-3077-4de8-9301-5ede35e2bb0e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:05:40 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:05:40 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:05:41 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (eb40e851-3077-4de8-9301-5ede35e2bb0e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:05:46 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:05:46 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:05:46 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (eb40e851-3077-4de8-9301-5ede35e2bb0e)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:05:51 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:05:51 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:05:51 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (eb40e851-3077-4de8-9301-5ede35e2bb0e)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:05:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:05:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:05:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:05:54 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (eb40e851-3077-4de8-9301-5ede35e2bb0e)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:05:59 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:05:59 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:06:04 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (eb40e851-3077-4de8-9301-5ede35e2bb0e)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:06:09 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:06:09 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:06:09 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:07:31 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:07:39 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:07:39 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:07:41 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:07:41 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:07:41 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:07:42 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (dc6fed15-ee0d-4a33-baaf-ed48d91e2338)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:07:47 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:07:47 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:07:47 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (dc6fed15-ee0d-4a33-baaf-ed48d91e2338)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:07:52 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:07:52 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:07:52 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (dc6fed15-ee0d-4a33-baaf-ed48d91e2338)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:07:57 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:07:57 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:07:57 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (dc6fed15-ee0d-4a33-baaf-ed48d91e2338)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:07:58 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:07:58 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:07:58 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:07:59 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (dc6fed15-ee0d-4a33-baaf-ed48d91e2338)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:08:04 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:08:04 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:08:06 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (dc6fed15-ee0d-4a33-baaf-ed48d91e2338)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:08:11 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:08:11 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:08:11 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:11:43 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:11:53 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:11:53 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:11:55 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:11:56 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:11:56 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:11:56 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (07d5d485-2733-466c-bad8-6e34a22476c3)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:12:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:12:01 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:12:01 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (07d5d485-2733-466c-bad8-6e34a22476c3)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:12:06 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:12:06 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:12:06 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (07d5d485-2733-466c-bad8-6e34a22476c3)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:12:11 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:12:11 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:12:12 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (07d5d485-2733-466c-bad8-6e34a22476c3)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:12:13 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:12:13 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:12:13 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:12:14 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (07d5d485-2733-466c-bad8-6e34a22476c3)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:12:19 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:12:19 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:12:20 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (07d5d485-2733-466c-bad8-6e34a22476c3)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:12:25 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:12:25 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:12:25 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:18:30 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:18:39 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:18:39 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:18:41 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:18:41 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:18:41 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:18:42 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5d72909e-8bb1-43f9-bbc1-9f889cb5b732)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:18:47 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:18:47 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:18:47 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5d72909e-8bb1-43f9-bbc1-9f889cb5b732)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:18:52 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:18:52 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:18:52 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5d72909e-8bb1-43f9-bbc1-9f889cb5b732)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:18:57 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:18:57 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:18:57 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (5d72909e-8bb1-43f9-bbc1-9f889cb5b732)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:18:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:18:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:18:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:19:00 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5d72909e-8bb1-43f9-bbc1-9f889cb5b732)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:19:05 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:19:05 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:19:07 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5d72909e-8bb1-43f9-bbc1-9f889cb5b732)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:19:12 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:19:12 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:19:12 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:21:59 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:22:07 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:22:07 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:22:10 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:22:10 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:22:10 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:22:10 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5b1dfebc-4e4b-41a9-ae65-22da8d7a2532)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:22:15 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:22:15 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:22:16 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5b1dfebc-4e4b-41a9-ae65-22da8d7a2532)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:22:21 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:22:21 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:22:21 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5b1dfebc-4e4b-41a9-ae65-22da8d7a2532)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:22:26 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:22:26 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:22:26 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (5b1dfebc-4e4b-41a9-ae65-22da8d7a2532)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:22:28 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:22:28 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:22:28 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:22:28 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5b1dfebc-4e4b-41a9-ae65-22da8d7a2532)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:22:33 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:22:33 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:22:34 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (5b1dfebc-4e4b-41a9-ae65-22da8d7a2532)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:22:39 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:22:39 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:22:39 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:24:35 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:24:42 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:24:42 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:24:45 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:24:45 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:24:45 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:24:45 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8b4acb03-498d-49ad-957a-fb13979573a8)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:24:50 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:24:50 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:24:50 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8b4acb03-498d-49ad-957a-fb13979573a8)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:24:55 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:24:55 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:24:55 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8b4acb03-498d-49ad-957a-fb13979573a8)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:25:00 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:25:00 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:25:01 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (8b4acb03-498d-49ad-957a-fb13979573a8)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:25:02 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:25:02 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:25:03 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:25:03 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8b4acb03-498d-49ad-957a-fb13979573a8)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:25:08 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:25:08 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:25:11 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (8b4acb03-498d-49ad-957a-fb13979573a8)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:25:16 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:25:16 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:25:16 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:27:13 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:27:20 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:27:20 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:27:22 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:27:23 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:27:23 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:27:23 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aa10f9bf-39be-4e9b-8744-0437e83085da)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:27:28 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:27:28 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:27:28 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aa10f9bf-39be-4e9b-8744-0437e83085da)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:27:33 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:27:33 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:27:33 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aa10f9bf-39be-4e9b-8744-0437e83085da)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:27:38 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:27:38 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:27:39 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (aa10f9bf-39be-4e9b-8744-0437e83085da)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:27:40 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:27:40 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:27:40 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:27:41 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aa10f9bf-39be-4e9b-8744-0437e83085da)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:27:46 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:27:46 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:27:47 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (aa10f9bf-39be-4e9b-8744-0437e83085da)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:27:52 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:27:52 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:27:52 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:28:53 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:29:01 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:29:01 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:29:02 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:29:03 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:29:03 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:29:03 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (24da25e6-918c-4648-91e1-5888933825dd)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:29:08 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:29:08 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:29:08 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (24da25e6-918c-4648-91e1-5888933825dd)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:29:13 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:29:13 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:29:13 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (24da25e6-918c-4648-91e1-5888933825dd)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:29:18 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:29:18 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:29:18 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (24da25e6-918c-4648-91e1-5888933825dd)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:29:20 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:29:20 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:29:20 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:29:21 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (24da25e6-918c-4648-91e1-5888933825dd)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:29:26 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:29:26 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:29:27 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (24da25e6-918c-4648-91e1-5888933825dd)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:29:32 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:29:32 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:29:32 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:30:49 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:30:56 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:30:56 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:30:59 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:30:59 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:30:59 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:30:59 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be3cab5b-a508-4d9d-8225-7e6937adec35)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:31:04 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:31:04 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:31:04 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be3cab5b-a508-4d9d-8225-7e6937adec35)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:31:09 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:31:09 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:31:09 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be3cab5b-a508-4d9d-8225-7e6937adec35)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:31:14 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:31:14 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:31:14 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (be3cab5b-a508-4d9d-8225-7e6937adec35)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:31:16 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:31:16 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:31:16 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:31:17 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be3cab5b-a508-4d9d-8225-7e6937adec35)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:31:22 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:31:22 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:31:23 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be3cab5b-a508-4d9d-8225-7e6937adec35)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:31:28 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:31:28 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:31:28 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:31:32 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast
+2024-07-02 12:33:55 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:34:06 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:34:06 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:34:09 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:34:09 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:34:09 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:34:09 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4b112a4e-adaa-4744-8ebc-de2779267b4d)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:34:14 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:34:14 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:34:15 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4b112a4e-adaa-4744-8ebc-de2779267b4d)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:34:20 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:34:20 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:34:20 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4b112a4e-adaa-4744-8ebc-de2779267b4d)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:34:25 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:34:25 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:34:25 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (4b112a4e-adaa-4744-8ebc-de2779267b4d)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:34:27 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:34:27 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:34:27 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:34:28 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4b112a4e-adaa-4744-8ebc-de2779267b4d)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:34:33 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:34:33 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:34:34 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (4b112a4e-adaa-4744-8ebc-de2779267b4d)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:34:39 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:34:39 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:34:39 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:34:43 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast
+2024-07-02 12:37:02 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:37:11 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:37:11 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:37:14 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:37:14 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:37:14 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:37:14 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (ddcdf0f0-244f-4b99-a364-961d0c88186f)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:37:19 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:37:19 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:37:19 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (ddcdf0f0-244f-4b99-a364-961d0c88186f)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:37:24 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:37:24 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:37:25 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (ddcdf0f0-244f-4b99-a364-961d0c88186f)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:37:30 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:37:30 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:37:30 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (ddcdf0f0-244f-4b99-a364-961d0c88186f)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:37:31 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:37:32 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:37:32 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:37:32 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (ddcdf0f0-244f-4b99-a364-961d0c88186f)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:37:37 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:37:37 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:37:39 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (ddcdf0f0-244f-4b99-a364-961d0c88186f)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:37:44 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:37:44 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:37:44 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:37:48 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast
+2024-07-02 12:39:20 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:39:30 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:39:30 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:39:31 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:39:31 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:39:31 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:39:32 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be86ea6e-5c00-4b04-a6a8-81cbee4d1d20)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:39:37 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:39:37 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:39:37 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be86ea6e-5c00-4b04-a6a8-81cbee4d1d20)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:39:42 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:39:42 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:39:42 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be86ea6e-5c00-4b04-a6a8-81cbee4d1d20)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:39:47 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:39:47 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:39:47 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (be86ea6e-5c00-4b04-a6a8-81cbee4d1d20)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:39:49 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:39:49 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:39:49 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:39:50 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be86ea6e-5c00-4b04-a6a8-81cbee4d1d20)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:39:55 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:39:55 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:39:56 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (be86ea6e-5c00-4b04-a6a8-81cbee4d1d20)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:40:01 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:40:01 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:40:01 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:40:05 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast
+2024-07-02 12:42:32 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:42:40 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:42:40 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:42:42 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:42:42 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:42:42 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:42:42 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (84547a99-65ad-4c81-8818-d05417d0cc1b)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:42:47 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:42:47 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:42:47 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (84547a99-65ad-4c81-8818-d05417d0cc1b)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:42:52 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:42:52 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:42:53 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (84547a99-65ad-4c81-8818-d05417d0cc1b)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:42:58 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:42:58 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:42:58 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (84547a99-65ad-4c81-8818-d05417d0cc1b)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:42:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:42:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:42:59 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:43:00 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (84547a99-65ad-4c81-8818-d05417d0cc1b)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:43:06 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:43:06 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:43:07 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (84547a99-65ad-4c81-8818-d05417d0cc1b)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:43:12 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:43:12 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:43:12 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:43:16 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast
+2024-07-02 12:52:13 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:52:22 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:52:22 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:52:25 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:52:25 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:52:25 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:52:25 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3a390074-c90f-49dc-afb1-cd73ca26ce8c)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:52:30 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:52:30 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:52:30 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3a390074-c90f-49dc-afb1-cd73ca26ce8c)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:52:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:52:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:52:36 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3a390074-c90f-49dc-afb1-cd73ca26ce8c)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:52:41 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:52:41 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:52:41 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (3a390074-c90f-49dc-afb1-cd73ca26ce8c)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:52:42 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:52:43 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:52:43 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:52:43 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3a390074-c90f-49dc-afb1-cd73ca26ce8c)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:52:48 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:52:48 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:52:49 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (3a390074-c90f-49dc-afb1-cd73ca26ce8c)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:52:54 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:52:54 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:52:54 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:52:58 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast
+2024-07-02 12:55:14 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:55:23 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:55:23 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:55:25 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:55:25 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:55:25 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:55:25 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (742fa60c-6236-4256-9e7b-645d59d54b5a)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:55:30 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:55:30 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:55:30 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (742fa60c-6236-4256-9e7b-645d59d54b5a)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:55:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:55:35 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:55:36 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (742fa60c-6236-4256-9e7b-645d59d54b5a)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:55:41 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:55:41 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:55:41 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (742fa60c-6236-4256-9e7b-645d59d54b5a)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:55:42 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:55:43 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:55:43 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:55:43 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (742fa60c-6236-4256-9e7b-645d59d54b5a)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:55:48 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:55:48 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:55:52 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (742fa60c-6236-4256-9e7b-645d59d54b5a)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:55:57 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:55:57 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:55:57 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:56:01 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast
+2024-07-02 12:58:27 [main] DEBUG mobile.functions.BaseClass - Desired Capabilities : Capabilities {appium:app: F:\Upscalix\Airhealth\apk\a..., appium:appActivity: , appium:appPackage: , appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-07-02 12:58:35 [main] DEBUG mobile.functions.BaseClass - App Installation Failed
+2024-07-02 12:58:35 [main] INFO  airhealth.pages.SplashScreen - Onboarding Screen Loaded
+2024-07-02 12:58:38 [main] DEBUG airhealth.pages.SplashScreen - App Version: 0.1.1
+2024-07-02 12:58:38 [main] DEBUG airhealth.pages.SplashScreen - Build Number: 39
+2024-07-02 12:58:38 [main] DEBUG airhealth.pages.SplashScreen - View Terms and Conditions
+2024-07-02 12:58:38 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (b7d205ff-7099-4cdd-a7f4-91d2ea7407ab)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:58:43 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Terms and Conditions Screen
+2024-07-02 12:58:43 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - View Allow GPS
+2024-07-02 12:58:43 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (b7d205ff-7099-4cdd-a7f4-91d2ea7407ab)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:58:48 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Loaded Allow GPS Screen
+2024-07-02 12:58:48 [main] DEBUG airhealth.pages.TermsAndConditionsScreen - Allow GPS Later and Continue
+2024-07-02 12:58:48 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (b7d205ff-7099-4cdd-a7f4-91d2ea7407ab)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:58:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Loaded Enter Postcode
+2024-07-02 12:58:53 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search for location : 3083
+2024-07-02 12:58:53 [main] DEBUG mobile.functions.MobilePageBase - Entered Text :3083: on element :[[AndroidDriver:  on ANDROID (b7d205ff-7099-4cdd-a7f4-91d2ea7407ab)] -> xpath: //android.widget.EditText] 
+2024-07-02 12:58:54 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Search Results Captured :3 Records
+2024-07-02 12:58:55 [main] DEBUG airhealth.pages.EnterPostcodeScreen - First matching record selected: Kingsbury, VIC, 3083
+2024-07-02 12:58:55 [main] DEBUG airhealth.pages.EnterPostcodeScreen - Enter location and navigate to View Allow Notifications screen
+2024-07-02 12:58:55 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (b7d205ff-7099-4cdd-a7f4-91d2ea7407ab)] -> xpath: //android.widget.Button[contains(@text, 'Continue')]]
+2024-07-02 12:59:00 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Loaded Allow Notifications Screen
+2024-07-02 12:59:00 [main] DEBUG airhealth.pages.AllowNotificationsScreen - Allow Notifications Later and Continue
+2024-07-02 12:59:01 [main] DEBUG mobile.functions.MobilePageBase - Clicked on element: [[AndroidDriver:  on ANDROID (b7d205ff-7099-4cdd-a7f4-91d2ea7407ab)] -> xpath: //android.widget.Button[contains(@text, 'Later')]]
+2024-07-02 12:59:06 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:59:06 [main] DEBUG airhealth.pages.DashboardScreen - Loaded Dashboard
+2024-07-02 12:59:06 [main] DEBUG airhealth.pages.DashboardScreen - View forecast details
+2024-07-02 12:59:10 [main] DEBUG airhealth.pages.DashboardScreen - Navigated to Upcoming Forecast

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MyTestSuite" verbose="1" parallel="none">
+
+	<listeners>
+		<listener class-name="mobile.utilities.ExtentReportListener" />
+	</listeners>
+	<test name="DashboardTest">
+		<classes>
+			<class name="airhealth.tests.DashboardTest">
+			</class>
+		</classes>
+	</test>
+
+</suite>

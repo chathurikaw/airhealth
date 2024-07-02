@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite]">
+  <listeners>
+    <listener class-name="mobile.utilities.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="DashboardTest(failed)">
+    <classes>
+      <class name="airhealth.tests.DashboardTest">
+        <methods>
+          <include name="viewForecastDataTest"/>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- airhealth.tests.DashboardTest -->
+    </classes>
+  </test> <!-- DashboardTest(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->
